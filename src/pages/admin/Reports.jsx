@@ -13,7 +13,7 @@ function Reports() {
   const fetchStats = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/dashboard"
+        "https://medicalcare-backend-1.onrender.com/api/dashboard"
       );
 
       setStats(res.data);

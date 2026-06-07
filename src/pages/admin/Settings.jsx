@@ -20,7 +20,7 @@ function Settings() {
       });
 
       const res = await axios.put(
-        "http://localhost:5000/api/auth/change-password",
+        "https://medicalcare-backend-1.onrender.com/api/auth/change-password",
         {
           email: "aishwarya200710@gmail.com",
           currentPassword,

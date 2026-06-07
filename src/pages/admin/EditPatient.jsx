@@ -24,7 +24,7 @@ function EditPatient() {
   const fetchPatient = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/patients/${id}`
+        `https://medicalcare-backend-1.onrender.com/api/patients/${id}`
       );
 
       setFormData(response.data.patient);
@@ -51,7 +51,7 @@ function EditPatient() {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/patients/${id}`,
+        `https://medicalcare-backend-1.onrender.com/api/patients/${id}`,
         formData
       );
 

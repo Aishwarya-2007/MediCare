@@ -26,7 +26,7 @@ function EditAppointment() {
   const fetchAppointment = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/appointments/${id}`
+        `https://medicalcare-backend-1.onrender.com/api/appointments/${id}`
       );
 
       setAppointment(
@@ -49,7 +49,7 @@ function EditAppointment() {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/appointments/${id}`,
+        `https://medicalcare-backend-1.onrender.com/api/appointments/${id}`,
         appointment
       );
 

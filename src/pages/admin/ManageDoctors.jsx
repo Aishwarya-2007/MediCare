@@ -10,7 +10,7 @@ function ManageDoctors() {
   const fetchDoctors = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/doctors"
+        "https://medicalcare-backend-1.onrender.com/api/doctors"
       );
 
       setDoctors(res.data.doctors);
@@ -32,7 +32,7 @@ function ManageDoctors() {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/doctors/${id}`
+        `https://medicalcare-backend-1.onrender.com/api/doctors/${id}`
       );
 
       alert("Doctor Deleted Successfully");

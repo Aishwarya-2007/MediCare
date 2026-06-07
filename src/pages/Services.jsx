@@ -10,7 +10,7 @@ const Services = () => {
 
   const [editingId, setEditingId] = useState(null);
 
-  const API = "http://localhost:5000/api/services";
+  const API = "https://medicalcare-backend-1.onrender.com/api/services";
 
   useEffect(() => {
     fetchServices();

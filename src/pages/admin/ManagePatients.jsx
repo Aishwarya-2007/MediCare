@@ -15,7 +15,7 @@ const ManagePatients = () => {
   const fetchPatients = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/patients"
+        "https://medicalcare-backend-1.onrender.com/api/patients"
       );
 
       setPatients(response.data.patients);
@@ -35,7 +35,7 @@ const ManagePatients = () => {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/patients/${id}`
+        `https://medicalcare-backend-1.onrender.com/api/patients/${id}`
       );
 
       alert("Patient Deleted Successfully");

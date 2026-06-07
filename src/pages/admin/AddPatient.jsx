@@ -28,7 +28,7 @@ function AddPatient() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/patients",
+        "https://medicalcare-backend-1.onrender.com/api/patients",
         formData
       );
 
